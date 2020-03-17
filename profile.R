@@ -4,4 +4,7 @@ filename <- tempfile()
 
 utils::Rprof(filename)
 create_std_pir_paramses(n = 1)
-utils::summaryRprof(filename)
+utils::Rprof(NULL)
+print(utils::summaryRprof(filename))
+
+
