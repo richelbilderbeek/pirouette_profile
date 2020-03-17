@@ -31,8 +31,7 @@ before_script:
   - Rscript -e "mauricer::install_beast2_pkg(\"NS\")"
 
 script:
-  - echo "Hello"
-  #- travis_wait 60 ./scripts/rerun.sh
+  - travis_wait 60 ./scripts/rerun.sh
 
 after_success:
   - Rscript -e "mcbette::mcbette_report()"

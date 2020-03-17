@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Re-run the code locally, to re-create the data and figure.
+# Re-run the code locally
 #
 # Usage:
 #
@@ -13,9 +13,8 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --ntasks=1
 #SBATCH --mem=10G
-#SBATCH --job-name=pirex30
-#SBATCH --output=example_30.log
-#
-rm -rf example_30
-Rscript example_30.R
+#SBATCH --job-name=pirprof
+#SBATCH --output=profile.log
+
+Rscript profile.R
 
