@@ -15,6 +15,7 @@
 #SBATCH --mem=10G
 #SBATCH --job-name=pirprof
 #SBATCH --output=profile.log
+module load R
 
 Rscript profile.R
 
